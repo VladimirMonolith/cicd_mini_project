@@ -1,0 +1,8 @@
+services:
+  backend:
+    image: cicd_mini_project:latest
+    container_name: cicd_mini_project
+    # restart: always
+    ports:
+      - 80:8000
+    command: "python main.py"
